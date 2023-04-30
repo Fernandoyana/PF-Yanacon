@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*HEADER*/
+.header {
+    background-color: #663300;
+    color: white;
+    font-family: poppins;
+    padding: 20px;
+    justify-content:center;
+}
+.header h1 a{
+    color: white;
+}
+.header a{
+    text-decoration: none;
+    color: bisque;
+    margin-right: 20px;
+}
+.header a:hover{
+    color: aliceblue;
+}
+.navbar{
+    flex-wrap: nowrap !important;
+    font-family: poppins;
+    padding-left: 5%;
+    background-color: burlywood;
+    margin-bottom: 0;
+
+}
+.navbar form button{
+    background-color: #4CAF50;
+    border-radius: 20px;
+    padding: 3px;
+    text-transform: capitalize;
+    color: aliceblue;
+
+}
+.navbar form input{
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+/*INICIO*/
+.principio{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+	margin: 0 auto;
+}
+.presentacion{
+    margin-top: 0;
+    background-image: linear-gradient(100deg, #100000, #00000020), url('img/gallery1.jpg');
+    height: 660px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.presentacion h2{
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+/*CUERPO INDEX*/
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    padding: 15px;
+    background-color: bisque;
+
+}
+
+.productos-index{
+    margin: 15px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    height: 28rem;
+    font-family: poppins;
+    text-align: center;
+    transition: all 0.6s;
+    margin-top: 20px;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+/* Estilos para las columnas */
+.columna {
+    width: auto;
+    text-align: center;
+    height: 300px;
+}
+
+.columna img:hover{
+    transform: scale(1.1);
+}
+/* Estilos para los links de comprar */
+.columna a button  {
+    display: inline-block;
+    width: 50%;
+    background-color: #663300;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #1a130c;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-footer:hover{
+    transform: none;
+}
+
+
+/* Estilos para los links del footer */
+.footer a {
+    margin-right: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: blueviolet;
+}
+
+
+
+/*******SECCION PRODUCTOS********/
+.parrafo{
+    font-family: poppins;
+    padding-left: 7%;
+}
+
+.parrafo h2{
+    background-color: burlywood;
+    width: 70%;
+    border-radius: 10px;
+    text-align: center;
+}
+.parrafo p{
+    margin-top: 10px;
+}
+
+.productos2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: poppins;
+}
+
+/* Estilos para cada producto */
+.producto {
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color:rgb(212, 211, 211) ;
+}
+
+/* Estilos para el botón de comprar */
+button {
+    background-color: #663300;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.producto img{
+    border-radius: 15px;
+}
+.producto img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/*****SECCION NOSOTROS*****/
+
+ /* Estilos para el apartado con información de la empresa */
+.about {
+    font-family: POPPINS;
+    padding: 20px;
+}
+.about h2{
+    width: 300px;
+    margin-bottom: 10px;
+    background-color: burlywood;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Estilos para las imágenes */
+.productos-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    /* width:auto;
+    height:"200"; */
+    margin-bottom: 15px;
+    justify-content: space-around;
+}
+
+/* Estilos para cada imagen */
+.imagen {
+    width: 300px;
+    text-align: center;
+}
+.imagen img{
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+
+/*******SECCION NESPRESSOS*******/
+
+
+
+
+
+/* Estilos para el contenedor de productos */
+
+.info{
+    font-family: poppins;
+    padding: 16px;    
+    }
+.info h2{
+    background-color: burlywood;
+    width: 640px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.iframe{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.parrafo2 p{
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    padding: 16px;
+    background-color: burlywood;
+    text-align: center;
+    
+}
+.productos-nesspreso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+/********SECCION VALORACIONES********/
+
+.valorant{
+    padding: 10px;
+    font-family: poppins;
+}
+.valorant h2{
+    background-color: burlywood;
+    width: 680px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.valoraciones{
+    font-family: poppins;
+}
+/* Estilos para el contenedor de valoraciones */
+.valoraciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Estilos para cada valoración */
+.valoracion {
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    max-width: 340px;
+    background-color: rgba(128, 128, 128, 0.068);
+}
+
+/* Estilos para el nombre del autor */
+.autor {
+    font-weight: bold;
+}
+
+/* Estilos para las estrellas */
+.estrellas {
+    color: gold;
+}
+
+
+/******FORMULARIO****/
+.form p{
+    font-family: poppins;
+    text-align: center;
+    margin: 50px 70px;
+    padding: 20px;
+    background-color: burlywood;
+    border-radius: 15px;
+    align-content: center;
+    max-width: 700px;
+}
+
+/* Estilos para el contenedor del formulario */
+.form{
+    display: flex;
+    justify-content: center;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 25%;
+    background-color: #e49b52;
+    width: 360px;
+    border-radius: 15px;
+}
+
+/* Estilos para los campos del formulario */
+.campo {
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+}
+.campo label{
+    background-color: burlywood;
+    text-align: center;
+    font-family: poppins;
+    margin: 5px 20px;
+    border-radius: 15px;
+}
+
+.campo input {
+    border-radius: 10px;
+}
+.campo select{
+    border-radius: 10px;
+}
+
+/* Estilos para la etiqueta del campo */
+.etiqueta {
+    display: block;
+    font-weight: bold;
+}
+
+/* Estilos para el input del campo */
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Estilos para el textarea del campo */
+.textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* Estilos para el botón de enviar */
+.formulario button {
+    background-color: #4CAF50;
+    width: 90%;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
