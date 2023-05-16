@@ -1,440 +1,398 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 /*HEADER*/
 .header {
-    background-color: #663300;
-    color: white;
-    font-family: poppins;
-    padding: 20px;
-    justify-content:center;
+  background-color: #1a130c;
+  color: white;
+  font-family: poppins;
+  padding: 20px;
+  justify-content: center;
 }
-.header h1 a{
-    color: white;
-    text-shadow: 3px 3px 2px black;
+.header h1 a {
+  color: white;
+  text-shadow: 2px 1.5px 4px bisque;
+  font-size: 105%;
+  margin-left: 2%;
 }
-.header a{
-    text-decoration: none;
-    color: bisque;
-    margin-right: 20px;
-    text-shadow: 2px 2px 2px black;
-}
-.header a:hover{
-    color: aliceblue;
-}
-.navbar{
-    flex-wrap: nowrap !important;
-    font-family: poppins;
-    padding-left: 5%;
-    background-color: bisque;
-
-}
-.navbar form button{
-    background-color: #4CAF50;
-    border-radius: 20px;
-    padding: 3px;
-    text-transform: capitalize;
-    color: aliceblue;
-
-}
-.navbar form input{
-    border-radius: 20px;
-    text-align: center;
+.header a {
+  text-decoration: none;
+  color: bisque;
+  margin-right: 20px;
+  margin-left: 1%;
+  text-shadow: 2px 2px 2px black;
+  font-size: 100%;
 }
 
+.header a:hover {
+  color: white;
+}
+
+.navbar {
+  flex-wrap: nowrap !important;
+  font-family: poppins;
+  padding-left: 5%;
+  background-color: bisque;
+}
+.navbar form button {
+  background-color: #4CAF50;
+  border-radius: 20px;
+  padding: 3px;
+  text-transform: capitalize;
+  color: aliceblue;
+}
+.navbar form input {
+  border-radius: 20px;
+  text-align: center;
+}
 
 /*INICIO*/
-.principio{
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-	margin: 0 auto;
+.principio {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
 }
-.presentacion{ 
-    background-image: linear-gradient(100deg, #100000, #00000020), url('img/gallery1.jpg');
-    height: 660px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+
+.presentacion {
+  background-image: linear-gradient(100deg, #100000, rgba(0, 0, 0, 0.1254901961)), url("img/gallery1.jpg");
+  height: 610px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-.presentacion h2{
+.presentacion h2 {
+  display: flex;
+  justify-content: center;
+  font-family: poppins;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  font-size: 105%;
+  line-height: 1.2;
+}
+
+.primera-seccion {
+  width: 100%;
+  height: 80vh;
+  font-family: poppins;
+  background-image: url(img/gallery3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.primera-seccion .call {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.685);
+  padding: 15px;
+}
+.primera-seccion .call h1 {
+  text-align: center;
+  margin: 20px;
+}
+.primera-seccion .call p {
+  margin-bottom: 20px;
+}
+.primera-seccion .call a {
+  text-decoration: none;
+  color: black;
+  background-color: burlywood;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 10px;
+}
+.primera-seccion .call a:hover {
+  background-color: bisque;
+}
+
+.nosotros {
+  width: 100%;
+  min-height: 350px;
+  background-color: bisque;
+}
+.nosotros .nleft {
+  height: 350px;
+  width: 100%;
+  background-image: url(img/gallery4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.nosotros .nrigth {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+.nosotros .nrigth p {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  font-family: poppins;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+  .nosotros {
     display: flex;
-    justify-content: center;
-    font-family: poppins;
-    color: whitesmoke;
-    padding: 20px;
-    margin: 20px;
-    font-size: 105%;
-    line-height: 1.2;
+  }
+  .nleft {
+    width: 50%;
+  }
+  .nrigth {
+    width: 50%;
+  }
 }
 /*CUERPO INDEX*/
-.subtitulo{
-    display: flex;
-    justify-content: center;
-    font-family: poppins;
-    padding: 15px;
-    background-color: bisque;
-
+.subtitulo {
+  display: flex;
+  justify-content: center;
+  font-family: poppins;
+  padding: 15px;
+  background-color: bisque;
 }
 
-.productos-index{
-    margin: 15px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
+.productos-index {
+  margin: 15px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
 }
-.card{
-    height: 28rem;
-    font-family: poppins;
-    text-align: center;
-    transition: all 0.6s;
-    margin-top: 20px;
+.productos-index .card {
+  height: 28rem;
+  font-family: poppins;
+  text-align: center;
+  transition: all 0.6s;
+  margin-top: 20px;
 }
-.card:hover{
-    transform: scale(1.05);
-}
-
-/* Estilos para las columnas */
-.columna {
-    width: auto;
-    text-align: center;
-    height: 300px;
+.productos-index .card:hover {
+  transform: scale(1.05);
 }
 
-.columna img:hover{
-    transform: scale(1.1);
-}
-/* Estilos para los links de comprar */
-.columna a button  {
-    display: inline-block;
-    width: 50%;
-    background-color: #663300;
-    color: white;
-    margin-top: 10px;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 10px;
-    border: 2px solid orange;
-}
-
+/* FIN CUERPO INDEX */
 /*FOOTER*/
-
 .footer {
-    background-color: #1a130c;
-    color: white;
-    font-family: poppins;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  background-color: #1a130c;
+  color: white;
+  font-family: poppins;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.logo-footer:hover{
-    transform: none;
+.footer a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
 }
-
-
-/* Estilos para los links del footer */
-.footer a{
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 20px;
+.footer a:hover {
+  color: blueviolet;
 }
-.footer a:hover{
-    color: blueviolet;
+.footer .logo:hover {
+  transform: none;
 }
-/*  */
-
-
-
 
 /*******SECCION PRODUCTOS********/
-.parrafo-p{
-    padding: 20px;
-    font-family: poppins;
-    font-weight: bolder;
-    padding-left: 15px;
+.productos-image {
+  background-image: url(img/gallery5.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: poppins;
+}
+.productos-image p {
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.685);
+  padding: 30px;
+}
+
+.parrafo-p {
+  padding: 20px;
+  font-family: poppins;
+  font-weight: bolder;
+  padding-left: 15px;
+  margin-top: 10px;
 }
 
 /*** EL ".PARRAFO H2" INCLUYE A TODOS LOS H2 DE LAS PAGINAS A NAVEGAR ***/
-.parrafo h2{
-    padding: 16px;
-    font-family: poppins;
-    font-weight: bolder;
-    background-color: burlywood;
-    width: 100%;
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 2px 1px 1px honeydew;
+.parrafo h2 {
+  padding: 16px;
+  font-family: poppins;
+  font-weight: bolder;
+  background-color: bisque;
+  margin: 0%;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 1px 1px burlywood;
 }
+
 /*** ACÁ TERMINA ***/
-
-
-.parrafo p{
-    margin-top: 10px;
-}
-
-.productos2 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    font-family: poppins;
-}
-
-/* Estilos para cada producto */
-.producto {
-    width: 250px;
-    height: auto;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    text-align: center;
-    background-color:rgb(212, 211, 211) ;
-}
-
-/* Estilos para el botón de comprar */
-button {
-    background-color: #663300;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-.producto img{
-    border-radius: 15px;
-}
-.producto img:hover{
-    transform: scale(1.1);
-}
-
-
-
-
-
-
 /*****SECCION NOSOTROS*****/
-
- /* Estilos para el apartado con información de la empresa */
+/* Estilos para el apartado con información de la empresa */
 .about {
-    font-family: POPPINS;
-    padding: 20px;
+  font-family: poppins;
+  padding: 20px;
+}
+.about .productos-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  justify-content: space-around;
+}
+.about .card-2 {
+  text-align: center;
+}
+.about .card-img-top {
+  border-radius: 10px;
 }
 
-/* Estilos para las imágenes con información */
-.productos-nosotros {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-    justify-content: space-around;
+.carousel {
+  padding: 20px;
+  font-family: poppins;
+  font-size: 20px;
 }
-
-.card-2{
-    text-align: center;
+.carousel .carousel-inner {
+  border-radius: 15px;
 }
-
-/* Estilos para cada imagen */
-.imagen {
-    width: 300px;
-    text-align: center;
-}
-.imagen img{
-    margin-right: 5px;
-    border-radius: 10px;
-}
-.card-img-top{
-    border-radius: 10px;
+.carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.685);
+  border-radius: 15px;
+  padding: 10px 20px;
 }
 
 /*******SECCION NESPRESSOS*******/
-
-
-
-
-
 /* Estilos para el contenedor de productos */
-
-.info{
-    font-family: poppins;
-    padding: 16px;    
-    }
-.info h2{
-    background-color: burlywood;
-    width: 640px;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-.iframe{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-.parrafo2 p{
-    text-align: center;
-    font-family: poppins;
-    padding: 16px;
-    background-color: burlywood;
-
-}
-.productos-nesspreso{
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    margin-bottom: 20px;
+.iframe {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-/********SECCION VALORACIONES********/
-
-.valorant{
-    padding: 10px;
-    font-family: poppins;
+.parrafo2 p {
+  text-align: center;
+  font-family: poppins;
+  padding: 16px;
+  background-color: burlywood;
 }
-.valorant h2{
-    background-color: burlywood;
-    width: 680px;
-    text-align: center;
-    margin-bottom: 15px;
-    border-radius: 10px;
+
+.productos-nesspreso {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
-.valoraciones{
-    font-family: poppins;
+.productos-nesspreso .card {
+  margin-bottom: 20px;
 }
+.productos-nesspreso .card-body {
+  text-align: center;
+}
+
+/********SECCION CONTACTO********/
 /* Estilos para el contenedor de valoraciones */
 .valoraciones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: poppins;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
-
-/* Estilos para cada valoración */
-.valoracion {
-    margin: 10px;
-    border: 3px solid black;
-    border-radius: 12px;
-    padding: 10px;
-    max-width: 340px;
-    background-color: rgba(128, 128, 128, 0.068);
+.valoraciones .valoracion {
+  margin: 10px;
+  border: 3px solid black;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 340px;
+  background-color: rgba(128, 128, 128, 0.068);
 }
-
-/* Estilos para el nombre del autor */
-.autor {
-    font-weight: bold;
+.valoraciones .autor {
+  font-weight: bold;
 }
-
-/* Estilos para las estrellas */
-.estrellas {
-    color: gold;
+.valoraciones .estrellas {
+  color: gold;
 }
-
 
 /******FORMULARIO****/
-.form p{
-    font-family: poppins;
-    text-align: center;
-    margin: 50px 70px;
-    padding: 20px;
-    background-color: burlywood;
-    border-radius: 15px;
-    align-content: center;
-    max-width: 700px;
-}
-
 /* Estilos para el contenedor del formulario */
-.form{
-    display: flex;
-    justify-content: center;
+.form {
+  display: flex;
+  justify-content: center;
 }
+.form p {
+  font-family: poppins;
+  text-align: center;
+  margin: 50px 70px;
+  padding: 20px;
+  background-color: burlywood;
+  border-radius: 15px;
+  align-content: center;
+  max-width: 700px;
+}
+
 .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 25%;
-    background-color: #e49b52;
-    width: 360px;
-    border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 25%;
+  background-color: #e49b52;
+  width: 360px;
+  border-radius: 15px;
 }
-
-/* Estilos para los campos del formulario */
-.campo {
-    margin: 10px;
-    padding: 5px;
-    width: 300px;
+.formulario .campo {
+  margin: 10px;
+  padding: 5px;
+  width: 300px;
 }
-.campo label{
-    background-color: burlywood;
-    text-align: center;
-    font-family: poppins;
-    margin: 5px 20px;
-    border-radius: 15px;
+.formulario .campo label {
+  background-color: burlywood;
+  text-align: center;
+  font-family: poppins;
+  margin: 5px 20px;
+  border-radius: 15px;
 }
-
-.campo input {
-    border-radius: 10px;
+.formulario .campo input {
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
 }
-.campo select{
-    border-radius: 10px;
+.formulario .campo select {
+  border-radius: 10px;
 }
-
-/* Estilos para la etiqueta del campo */
-.etiqueta {
-    display: block;
-    font-weight: bold;
+.formulario .campo .textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
-
-/* Estilos para el input del campo */
-.input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid black;
-}
-
-/* Estilos para el textarea del campo */
-.textarea {
-    display: block;
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-/* Estilos para el botón de enviar */
 .formulario button {
-    background-color: #4CAF50;
-    width: 90%;
-    color: white;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    border: 2px solid white;
-    cursor: pointer;
+  background-color: #4CAF50;
+  width: 90%;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  cursor: pointer;
 }
-
-button:hover {
-    opacity: 0.8;
-}
-
+.formulario button button:hover {
+  opacity: 0.8;
+}/*# sourceMappingURL=estilos.css.map */

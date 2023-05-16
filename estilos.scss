@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+$color1:black;
+$color2:white;
+$color3:bisque;
+$color4:#1a130c;
+$fuente:poppins;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*HEADER*/
+.header {
+    background-color:$color4;
+    color: white;
+    font-family: poppins;
+    padding: 20px;
+    justify-content:center;
+
+    h1 a{
+        color: white;
+        text-shadow: 2px 1.5px 4px $color3;
+        font-size: 105%;
+        margin-left: 2%;
+    }
+    a{
+        text-decoration: none;
+        color: bisque;
+        margin-right: 20px;
+        margin-left: 1%;
+        text-shadow: 2px 2px 2px $color1;
+        font-size: 100%
+    }
+}
+.header a:hover{
+    color: $color2;
+}
+.navbar{
+    flex-wrap: nowrap !important;
+    font-family: poppins;
+    padding-left: 5%;
+    background-color: $color3;
+    form button{
+        background-color: #4CAF50;
+        border-radius: 20px;
+        padding: 3px;
+        text-transform: capitalize;
+        color: aliceblue;
+    }
+    form input{
+        border-radius: 20px;
+        text-align: center;
+    }
+}
+
+/*INICIO*/
+.principio{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+	margin: 0 auto;
+}
+.presentacion{ 
+    background-image: linear-gradient(100deg, #100000, #00000020), url('img/gallery1.jpg');
+    height: 610px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    h2{
+        display: flex;
+        justify-content: center;
+        font-family: poppins;
+        color: $color2;
+        padding: 20px;
+        margin: 20px;
+        font-size: 105%;
+        line-height: 1.2;
+    }
+}
+
+.primera-seccion{
+    width: 100%;
+    height: 80vh;
+    font-family: $fuente;
+    background-image: url(img/gallery3.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .call{
+        color: aliceblue;
+        background-color: rgba(0, 0, 0, 0.685);
+        padding: 15px;
+
+        h1{
+            text-align: center;
+            margin: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: $color1;
+            background-color: burlywood;
+            padding: 8px;
+            border-radius: 8px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        a:hover{
+            background-color: $color3;
+        }
+    }      
+}
+
+.nosotros{
+    width: 100%;
+    min-height: 350px;
+    background-color: $color3;
+
+    .nleft{
+        height: 350px;
+        width: 100%;
+        background-image: url(img/gallery4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .nrigth{
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        p{
+            display: flex;
+            margin-bottom: 30px;
+            align-items: center;
+            font-family: $fuente;
+            font-weight: bold
+        }
+    }
+}
+
+@media only screen and (min-width:480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+    .nosotros{
+        display: flex;
+    }
+    .nleft{
+        width: 50%;
+    }
+    .nrigth{
+        width: 50%;
+    }
+}
+
+
+/*CUERPO INDEX*/
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    padding: 15px;
+    background-color: bisque;
+}
+
+.productos-index{
+    margin: 15px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    
+    .card{
+        height: 28rem;
+        font-family: poppins;
+        text-align: center;
+        transition: all 0.6s;
+        margin-top: 20px;
+    }
+    .card:hover{
+        transform: scale(1.05);
+    }
+}
+/* FIN CUERPO INDEX */
+
+
+/*FOOTER*/
+
+.footer {
+    background-color: $color4;
+    color: white;
+    font-family: poppins;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    a{
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    a:hover{
+        color: blueviolet;
+    }
+    .logo:hover{
+        transform: none;
+    }
+}
+
+
+
+
+/*******SECCION PRODUCTOS********/
+
+.productos-image{
+    background-image: url(img/gallery5.jpg);
+    background-position: center;
+    background-size: cover;
+    height:400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $fuente;
+
+    p{
+        font-weight: 600;
+        color: $color2;
+        background-color: rgba(0, 0, 0, 0.685);
+        padding: 30px;
+    }
+}
+
+
+.parrafo-p{
+    padding: 20px;
+    font-family: $fuente;
+    font-weight: bolder;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+/*** EL ".PARRAFO H2" INCLUYE A TODOS LOS H2 DE LAS PAGINAS A NAVEGAR ***/
+.parrafo h2{
+    padding: 16px;
+    font-family: $fuente;
+    font-weight: bolder;
+    background-color: $color3;
+    margin: 0%;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 1px 1px burlywood;
+}
+/*** ACÁ TERMINA ***/
+
+
+
+
+
+/*****SECCION NOSOTROS*****/
+
+ /* Estilos para el apartado con información de la empresa */
+.about {
+    font-family: $fuente;
+    padding: 20px;
+
+    .productos-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    }
+    .card-2{
+    text-align: center;
+    }
+    .card-img-top{
+        border-radius: 10px;
+    }
+}
+.carousel{
+    padding: 20px;
+    font-family: $fuente;
+    font-size: 20px;
+
+    .carousel-inner{
+        border-radius: 15px;
+    }
+    .carousel-caption{
+        background-color: rgba(0, 0, 0, 0.685);
+        border-radius: 15px;
+        padding: 10px 20px;
+    }
+}
+
+/*******SECCION NESPRESSOS*******/
+
+/* Estilos para el contenedor de productos */
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.parrafo2 p{
+    text-align: center;
+    font-family: poppins;
+    padding: 16px;
+    background-color: burlywood;
+
+}
+.productos-nesspreso{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin-bottom: 20px;
+
+    .card{
+        margin-bottom: 20px;
+    }
+    .card-body{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+/********SECCION CONTACTO********/
+
+/* Estilos para el contenedor de valoraciones */
+.valoraciones{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $fuente;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    .valoracion{
+        margin: 10px;
+        border: 3px solid $color1;
+        border-radius: 12px;
+        padding: 10px;
+        max-width: 340px;
+        background-color: rgba(128, 128, 128, 0.068);
+    }
+    .autor{
+    font-weight: bold;
+    }
+    .estrellas{
+    color: gold;
+    }
+}
+
+
+/******FORMULARIO****/
+
+
+/* Estilos para el contenedor del formulario */
+.form{
+    display: flex;
+    justify-content: center;
+
+    p{
+        font-family: $fuente;
+        text-align: center;
+        margin: 50px 70px;
+        padding: 20px;
+        background-color: burlywood;
+        border-radius: 15px;
+        align-content: center;
+        max-width: 700px;
+    }
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 25%;
+    background-color: #e49b52;
+    width: 360px;
+    border-radius: 15px;
+
+    .campo {
+        margin: 10px;
+        padding: 5px;
+        width: 300px;
+        label{
+            background-color: burlywood;
+            text-align: center;
+            font-family: $fuente;
+            margin: 5px 20px;
+            border-radius: 15px;
+        }
+        input {
+            border-radius: 10px;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid $color1;
+        }
+        select{
+            border-radius: 10px;
+        }
+        .textarea {
+            display: block;
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid $color1;
+            border-radius: 10px;
+        }
+    }
+    button {
+        background-color: #4CAF50;
+        width: 90%;
+        color: $color2;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border: 2px solid $color2;
+        cursor: pointer;
+        button:hover {
+            opacity: 0.8;
+        }
+    }
+}
