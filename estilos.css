@@ -160,20 +160,20 @@
   background-color: bisque;
 }
 
-.productos-index {
+.productos-index, .productos-nesspreso {
   margin: 15px;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
 }
-.productos-index .card {
+.productos-index .card, .productos-nesspreso .card {
   height: 28rem;
   font-family: poppins;
   text-align: center;
   transition: all 0.6s;
   margin-top: 20px;
 }
-.productos-index .card:hover {
+.productos-index .card:hover, .productos-nesspreso .card:hover {
   transform: scale(1.05);
 }
 
@@ -261,8 +261,21 @@
   border-radius: 10px;
 }
 
+.titulo-ubicacion {
+  font-family: poppins;
+  margin: 30px 40px;
+  text-align: center;
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .carousel {
   padding: 20px;
+  margin-bottom: 50px;
   font-family: poppins;
   font-size: 20px;
 }
@@ -280,7 +293,7 @@
 .iframe {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .parrafo2 p {
@@ -290,20 +303,42 @@
   background-color: burlywood;
 }
 
-.productos-nesspreso {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 20px;
+/********SECCION CONTACTO********/
+.contact-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+  font-family: poppins;
 }
-.productos-nesspreso .card {
-  margin-bottom: 20px;
-}
-.productos-nesspreso .card-body {
+.contact-section h2 {
+  font-size: 24px;
+  color: #333333;
   text-align: center;
 }
+.contact-section p {
+  font-size: 16px;
+  color: #333333;
+}
+.contact-section a {
+  text-decoration: none;
+}
 
-/********SECCION CONTACTO********/
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.social-icons li {
+  margin: 10px;
+  font-size: 25px;
+}
+.social-icons li a {
+  color: crimson;
+}
+.social-icons li a:hover {
+  color: #4CAF50;
+}
+
 /* Estilos para el contenedor de valoraciones */
 .valoraciones {
   display: flex;
@@ -339,20 +374,20 @@
   text-align: center;
   margin: 50px 70px;
   padding: 20px;
-  background-color: burlywood;
+  background-color: bisque;
   border-radius: 15px;
-  align-content: center;
   max-width: 700px;
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
+  font-family: poppins;
   align-items: center;
   margin: 20px 25%;
-  background-color: #e49b52;
+  background-color: burlywood;
   width: 360px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .formulario .campo {
   margin: 10px;
@@ -360,15 +395,15 @@
   width: 300px;
 }
 .formulario .campo label {
-  background-color: burlywood;
-  text-align: center;
-  font-family: poppins;
-  margin: 5px 20px;
+  display: flex;
+  background-color: bisque;
+  font-weight: bolder;
+  justify-content: center;
+  margin: 5px 0px;
   border-radius: 15px;
 }
-.formulario .campo input {
-  border-radius: 10px;
-  display: block;
+.formulario .campo .input {
+  border-radius: 5px;
   width: 100%;
   padding: 10px;
   border: 1px solid black;
@@ -386,13 +421,13 @@
 }
 .formulario button {
   background-color: #4CAF50;
-  width: 90%;
+  width: 80%;
   color: white;
   padding: 10px 20px;
   margin-bottom: 20px;
   border: 2px solid white;
   cursor: pointer;
 }
-.formulario button button:hover {
-  opacity: 0.8;
+.formulario button:hover {
+  background-color: yellowgreen;
 }/*# sourceMappingURL=estilos.css.map */

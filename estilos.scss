@@ -285,8 +285,23 @@ $fuente:poppins;
         border-radius: 10px;
     }
 }
+
+.titulo-ubicacion{
+    font-family: $fuente;
+    margin: 30px 40px;
+    text-align: center;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
 .carousel{
     padding: 20px;
+    margin-bottom: 50px;
     font-family: $fuente;
     font-size: 20px;
 
@@ -300,6 +315,10 @@ $fuente:poppins;
     }
 }
 
+
+
+
+
 /*******SECCION NESPRESSOS*******/
 
 /* Estilos para el contenedor de productos */
@@ -307,35 +326,65 @@ $fuente:poppins;
 .iframe{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .parrafo2 p{
     text-align: center;
     font-family: poppins;
     padding: 16px;
     background-color: burlywood;
-
 }
+
 .productos-nesspreso{
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    margin-bottom: 20px;
-
-    .card{
-        margin-bottom: 20px;
-    }
-    .card-body{
-        text-align: center;
-    }
+    @extend .productos-index;
 }
-
-
 
 
 
 
 /********SECCION CONTACTO********/
+
+
+.contact-section{
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    font-family: $fuente;
+
+    h2{
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+    }
+    p{
+    font-size: 16px;
+    color: #333333;
+    }
+    a{
+    text-decoration: none;
+    }
+
+}
+
+
+.social-icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    li{
+    margin: 10px;
+    font-size: 25px;
+    a{
+        color: crimson;
+    }
+    a:hover{
+        color: #4CAF50;
+    }
+    }
+}
+
+
 
 /* Estilos para el contenedor de valoraciones */
 .valoraciones{
@@ -376,35 +425,36 @@ $fuente:poppins;
         text-align: center;
         margin: 50px 70px;
         padding: 20px;
-        background-color: burlywood;
+        background-color: $color3;
         border-radius: 15px;
-        align-content: center;
         max-width: 700px;
     }
 }
 .formulario {
     display: flex;
     flex-direction: column;
+    font-family: $fuente;
     align-items: center;
     margin: 20px 25%;
-    background-color: #e49b52;
+    background-color: burlywood;
     width: 360px;
-    border-radius: 15px;
+    border-radius: 10px;
 
     .campo {
         margin: 10px;
         padding: 5px;
         width: 300px;
+
         label{
-            background-color: burlywood;
-            text-align: center;
-            font-family: $fuente;
-            margin: 5px 20px;
+            display: flex;
+            background-color: $color3;
+            font-weight: bolder;
+            justify-content: center;
+            margin: 5px 0px;
             border-radius: 15px;
         }
-        input {
-            border-radius: 10px;
-            display: block;
+        .input {
+            border-radius: 5px;
             width: 100%;
             padding: 10px;
             border: 1px solid $color1;
@@ -421,16 +471,17 @@ $fuente:poppins;
             border-radius: 10px;
         }
     }
-    button {
+    button{
         background-color: #4CAF50;
-        width: 90%;
+        width: 80%;
         color: $color2;
         padding: 10px 20px;
         margin-bottom: 20px;
         border: 2px solid $color2;
         cursor: pointer;
-        button:hover {
-            opacity: 0.8;
-        }
+        
     }
+    button:hover{
+            background-color: yellowgreen;
+        }
 }
