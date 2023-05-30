@@ -33,28 +33,10 @@
   color: white;
 }
 
-.navbar {
-  flex-wrap: nowrap !important;
-  font-family: poppins;
-  padding-left: 5%;
-  background-color: bisque;
-}
-.navbar form button {
-  background-color: #4CAF50;
-  border-radius: 20px;
-  padding: 3px;
-  text-transform: capitalize;
-  color: aliceblue;
-}
-.navbar form input {
-  border-radius: 20px;
-  text-align: center;
-}
-
 /*INICIO*/
 .principio {
+  text-align: center;
   display: flex;
-  justify-content: center;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -90,13 +72,14 @@
   color: aliceblue;
   background-color: rgba(0, 0, 0, 0.685);
   padding: 15px;
+  text-align: center;
 }
 .primera-seccion .call h1 {
   text-align: center;
   margin: 20px;
 }
 .primera-seccion .call p {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .primera-seccion .call a {
   text-decoration: none;
@@ -105,7 +88,6 @@
   padding: 8px;
   border-radius: 8px;
   text-align: center;
-  margin-left: 10px;
 }
 .primera-seccion .call a:hover {
   background-color: bisque;
@@ -129,6 +111,7 @@
   padding: 20px;
 }
 .nosotros .nrigth p {
+  text-align: center;
   display: flex;
   margin-bottom: 30px;
   align-items: center;
@@ -221,10 +204,10 @@
 }
 
 .parrafo-p {
+  text-align: center;
   padding: 20px;
   font-family: poppins;
   font-weight: bolder;
-  padding-left: 15px;
   margin-top: 10px;
 }
 
@@ -309,6 +292,7 @@
   padding: 20px;
   margin: 20px;
   font-family: poppins;
+  text-align: center;
 }
 .contact-section h2 {
   font-size: 24px;
@@ -347,6 +331,7 @@
   justify-content: center;
   align-items: center;
   margin: 20px;
+  text-align: center;
 }
 .valoraciones .valoracion {
   margin: 10px;
